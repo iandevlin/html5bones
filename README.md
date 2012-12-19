@@ -17,7 +17,7 @@ Features
 - Contains the most popular HTML5 structural elements and how to use them
 - Cross-browser compatible, down to and including Internet Explorer 7
 - Print CSS included in the main styles.css file
-- (Normalize.css)[http://necolas.github.com/normalize.css/] is included to normalise CSS across browsers
+- [Normalize.css](http://necolas.github.com/normalize.css/) is included to normalise CSS across browsers
 - Inline documentation
 
 Documentation
