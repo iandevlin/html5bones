@@ -110,17 +110,11 @@
 		
 	</footer>
 	
-	<!-- Google Analytics - change the UA-XXXX-XX string to your site's ID -->
+	<!-- Google Analytics - Optimized version by Mathias Bynens -->
+	<!-- See: http://mathiasbynens.be/notes/async-analytics-snippet -->
+	<!-- Change the UA-XXXX-XX string to your site's ID -->
 	<script>
-		var _gaq = _gaq || [];
-	 	_gaq.push(['_setAccount', 'UA-XXXX-XX']);
-	  	_gaq.push(['_trackPageview']);
-	
-	  	(function() {
-	    		var ga = document.createElement('script'); ga.async = true;
-	    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  	})();
+		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
 	</script>
 	
 </body>
