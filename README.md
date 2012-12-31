@@ -19,6 +19,8 @@ Features
 - Print CSS included in the main styles.css file
 - [Normalize.css](http://necolas.github.com/normalize.css/) is included to normalise CSS across browsers
 - Inline documentation
+- Reduced, non-commented version also included
+- MIT license
 
 Documentation
 =============
