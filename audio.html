@@ -23,33 +23,36 @@
 </head>
 <body>
 
-	<!-- This video element tells the browser to display the default control set, to use a specified poster image which will display before the user plays the video, and to only preload the video's metadata (e.g. video duration)
-	NOTE: Internet Explorer 9 and 10 will ignore the poster image if any of the video is loaded. To force these browsers to support the poster image, set preload="none" -->	
-	<video id="video" controls poster="url-to-poster-image.jpg" preload="metadata">
-		<!-- Provide multiple video sources for cross-browser support -->
+	<!-- This audio element tells the browser to display the default control set and to only preload the audio's metadata (e.g. video duration) -->	
+	<audio id="audio" controls preload="metadata">
+		<!-- Provide multiple audio sources for cross-browser support -->
 		
-		<!-- MP4 source for Chrome, Safari, Internet Explorer 9+, iOS and Android
-		NOTE: remove the type attribute from the MP4 <source> element to ensure older Android support -->
-		<source src="url-to-video.mp4" type="video/mp4">
+		<!-- MP3 source for Chrome, Safari, IE9+, iOS and Android 2.3+ 
+		NOTE: For Android 2.2 support see below -->
+		<source src="url-to-audio.mp3" type="audio/mp3">
 		
-		<!-- WebM source for FireFox and Opera (also Chrome and Internet Explorer 9+) -->
-		<source src="url-to-video.webm" type="video/webm">
+		<!-- Ogg source for Firefox, Chrome and Opera -->
+		<source src="url-to-audio.ogg" type="audio/ogg">
 		
-		<!-- Include an Ogg video file to support Firefox 3.5 and 3.6 -->
-		<source src="url-to-video.ogg" type="video/ogg">
-		
-		<!-- Provide a Flash fallbackfor browsers that don't support HTML5 video, e.g. Internet Explorer 6-7.
-		This uses the Google Player to play the MP4 file. Set the height and width attributes to the correct values.
-		NOTE: The Google Player (player.swf) is taken from the Google Video Service which is no longer available -->
-		<object type="application/x-shockwave-flash" data="player.swf?videoUrl=url-to-video.mp4" height="XXX" width="XXX">
-			<param name="movie"	value="player.swf?videoUrl=url-to-video.mp4">
+		<!-- Provide a Flash fallback for browsers that don't support HTML5 audio, e.g. Internet Explorer 6-7.
+		This uses the Google Player to play the MP4 file. The height and width attributes are set to appropriate values for an audio player. Feel free to change them.
+		NOTE: The Google Player (player.swf) is taken from the Google Video Service which is no longer available. It also plays audio files. -->
+		<object type="application/x-shockwave-flash" data="player.swf?audioUrl=url-to-audio.mp3" height="27" width="320">
+			<param name="movie"	value="player.swf?audioUrl=url-to-audio.mp3">
 		</object>
 		
-		<!-- Add a downloadable link for users who do not have a HTML5 video capable browser, nor Flash installed
+		<!-- Add a downloadable link for users who do not have a HTML5 audio capable browser, nor Flash installed
 		NOTE: This link will be displayed even if the user has Flash installed -->
-		<a href="url-to-video.mp4">Download MP4 video</a>
+		<a href="url-to-audio.mp3">Download MP3 audio</a>
+	</audio>
+	
+	<!-- Use this if you need to support Android 2.2 devices -->
+	<!-- Android 2.2 supports the audio tag but none of the codecs. However an MP3 file can be played in the video tag, although it does go to fullscreen mode. This is a possible workaround if Android 2.2 support is required -->
+	<!--
+	<video id="video" controls>
+		<source src="url-to-audio.mp3">
 	</video>
-
+	-->
 
 	<!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
 	<!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
@@ -62,13 +65,15 @@
 	
 	<!-- Required to initiate video play in Android -->
 	<script>
-		// Use the dreaded browser sniffing to check if it's Android
+		// Use browser sniffing to check if it's Android (some say browser sniffing is bad - but I think it's appropriate here)
 		var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
 		
-		// If this is an Android browser, then add a click handler to play the video when it is "clicked"
+		// If this is an Android browser, then add a click handler to play the audio and video when it is "clicked"
 		if (isAndroid) {
+			var audio = document.getElementById("audio");
+			if (audio) audio.addEventListener("click", function() { audio.play(); }, false);
 			var video = document.getElementById("video");
-			video.addEventListener("click", function() { video.play(); }, false);
+			if (video) video.addEventListener("click", function() { video.play(); }, false);
 		}
 	</script>
 	

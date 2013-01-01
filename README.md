@@ -15,11 +15,12 @@ Features
 ========
 
 - Contains the most popular HTML5 structural elements and how to use them
+- Also contains templates for HTML5 video and audio and how to use them
 - Cross-browser compatible, down to and including Internet Explorer 7
 - Print CSS included in the main styles.css file
 - [Normalize.css](http://necolas.github.com/normalize.css/) is included to normalise CSS across browsers
 - Inline documentation
-- Reduced, non-commented version also included
+- Reduced, non-commented version for main template also included
 - MIT license
 
 Documentation
