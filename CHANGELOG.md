@@ -1,3 +1,8 @@
+###v1.3.1 (4th January 2013)
+
+- Added cutdown "bare bones" template file for pedants
+- Removed superfluous htmlshiv.js file
+
 ###v1.3.0 (1st January 2013)
 
 - Added commented HTML5 audio template file
