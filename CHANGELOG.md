@@ -1,3 +1,8 @@
+###v1.3.2 (9th January 2013)
+
+- Updated version of html5shiv-printshiv.js in preparation for future inclusion of the <main> element
+- Added option to use normalize-legacy.css for older browser support
+
 ###v1.3.1 (4th January 2013)
 
 - Added cutdown "bare bones" template file for pedants
