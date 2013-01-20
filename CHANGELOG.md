@@ -1,3 +1,8 @@
+###v1.4.0 (20th January 2013)
+
+- Added <main> element
+- Changed DOCTYPE to doctype
+
 ###v1.3.2 (9th January 2013)
 
 - Updated version of html5shiv-printshiv.js in preparation for future inclusion of the <main> element
