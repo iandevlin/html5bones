@@ -1,7 +1,7 @@
 ###v1.4.1 (21st January 2013)
 
 - Upgraded to normalize.css [v2.1.0](https://github.com/necolas/normalize.css/blob/v2.1.0/CHANGELOG.md) (which includes the main element)
-- 2012 -> 2012 in index.html comments
+- 2012 -> 2013 in index.html comments
 
 ###v1.4.0 (20th January 2013)
 
