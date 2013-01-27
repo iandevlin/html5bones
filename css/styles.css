@@ -4,23 +4,26 @@
    you to simply add your own. This is a basic template 
    after all.
    ---------------------------------------------------------*/
-   body {
+	body {
    
-   }
-   
-   
-   
-   
+	}
+	/* Default link styling */
+	a:link { color:#0271fb; }
+	a:visited { color:#bd02fb; }
+	a:hover, a:focus { color:#000; }
+	a:active { color:#fb0e02; }
+	
+	
+	
 /* ---------------------------------------------------------
    Author's styles
    ---------------------------------------------------------*/
-   body {
+	body {
    
-   }
-   
-   
-   
-   
+	}
+
+
+	
 /* ---------------------------------------------------------
    Print styles
    ---------------------------------------------------------*/
@@ -31,9 +34,7 @@
         text-shadow:none !important;
 		background:transparent !important;
     }
-	html {
-		background-color:#fff;
-	}
+	html { background-color:#fff; }
 	/* Hide navigation */
 	nav { display:none; }
 
@@ -46,14 +47,10 @@
 		border:none;
 	}
 	/* Don't show link destinations for JavaScript or internal links */ 
-	a[href^="javascript:"]:after, a[href^="#"]:after {
-        content:"";
-    }
+	a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
 	
 	/* Show abbr title value in brackets after the text */
-	abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after { content: " (" attr(title) ")"; }
 
 	figure { 
 		margin-bottom:1em; 
@@ -61,5 +58,4 @@
 	}
 
 	figure img { border:1px solid #000; }
-
 }
