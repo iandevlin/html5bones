@@ -1,3 +1,9 @@
+###v1.5.0 (27th January 2013)
+
+- Added template for HTML5 video with subtitles
+- Added default CSS link styling for accessibility
+- Upgraded normalize-legacy.css to v1.1.0
+
 ###v1.4.1 (21st January 2013)
 
 - Upgraded to normalize.css [v2.1.0](https://github.com/necolas/normalize.css/blob/v2.1.0/CHANGELOG.md) (which includes the main element)
