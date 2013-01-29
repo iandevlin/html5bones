@@ -65,10 +65,10 @@
 		// Use the dreaded browser sniffing to check if it's Android
 		var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
 		
-		// If this is an Android browser, then add a click handler to play the video when it is "clicked"
+		// If this is an Android browser, then add a touchstart handler to play the video when it is "touched"
 		if (isAndroid) {
 			var video = document.getElementById("video");
-			video.addEventListener("click", function() { video.play(); }, false);
+			video.addEventListener("touchstart", function() { video.play(); }, false);
 		}
 	</script>
 	
