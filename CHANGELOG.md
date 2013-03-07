@@ -1,3 +1,8 @@
+###v1.6.0 (7th March 2013)
+
+- Changed player.swf to [Video.js](http://videojs.com/) version
+- Updated Flash fallback code to use format as laid out in [Video For Everybody - Test Page](http://camendesign.com/code/video_for_everybody/test.html)
+
 ###v1.5.0 (27th January 2013)
 
 - Added template for HTML5 video with subtitles
