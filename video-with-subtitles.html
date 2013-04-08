@@ -60,18 +60,6 @@
 		
 	</footer>
 	
-	<!-- Required to initiate video play in Android -->
-	<script>
-		// Use the dreaded browser sniffing to check if it's Android
-		var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-		
-		// If this is an Android browser, then add a touchstart handler to play the video when it is "touched"
-		if (isAndroid) {
-			var video = document.getElementById("video");
-			video.addEventListener("touchstart", function() { video.play(); }, false);
-		}
-	</script>
-	
 	<!-- Google Analytics - Optimized version by Mathias Bynens -->
 	<!-- See: http://mathiasbynens.be/notes/async-analytics-snippet -->
 	<!-- Change the UA-XXXX-XX string to your site's ID -->
