@@ -34,12 +34,12 @@
 		<!-- Ogg source for Firefox, Chrome and Opera -->
 		<source src="url-to-audio.ogg" type="audio/ogg">
 		
-		<!-- Provide a Flash fallback for browsers that don't support HTML5 audio, e.g. Internet Explorer 6-7.
-		This uses the Google Player to play the MP4 file. The height and width attributes are set to appropriate values for an audio player. Feel free to change them.
-		NOTE: The Google Player (player.swf) is taken from the Google Video Service which is no longer available. It also plays audio files. -->
-		<object type="application/x-shockwave-flash" data="player.swf?audioUrl=url-to-audio.mp3" height="27" width="320">
-			<param name="movie"	value="player.swf?audioUrl=url-to-audio.mp3">
-		</object>
+		<!-- Provide a Flash fallback for browsers that don't support HTML5 audio, e.g. Internet Explorer 6-8.
+		This uses the JW Player Flash Player to play the MP4 file. Set the height and width attributes to the correct values. -->
+		<object type="application/x-shockwave-flash" data="player.swf" height="24" width="320">
+        	<param name="movie" value="player.swf" />
+        	<param name="flashvars" value="file=url-to-audio.mp3" />
+    	</object>
 		
 		<!-- Add a downloadable link for users who do not have a HTML5 audio capable browser, nor Flash installed
 		NOTE: This link will be displayed even if the user has Flash installed -->
@@ -63,17 +63,17 @@
 		
 	</footer>
 	
-	<!-- Required to initiate video play in Android -->
+	<!-- Required to initiate audio play in Android -->
 	<script>
-		// Use browser sniffing to check if it's Android (some say browser sniffing is bad - but I think it's appropriate here)
-		var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+		// Use browser sniffing to check if it's a pre Android 4 device (some say browser sniffing is bad - but I think it's appropriate here)
+		var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
 		
-		// If this is an Android browser, then add a click handler to play the audio and video when it is "clicked"
-		if (isAndroid) {
+		// If this is a pre Android 4 device, then add a click handler to play the audio and video when it is "clicked" (touched)
+		if (isPreAndroid4) {
 			var audio = document.getElementById("audio");
-			if (audio) audio.addEventListener("click", function() { audio.play(); }, false);
+			if (audio) audio.addEventListener("touchstart", function() { audio.play(); }, false);
 			var video = document.getElementById("video");
-			if (video) video.addEventListener("click", function() { video.play(); }, false);
+			if (video) video.addEventListener("touchstart", function() { video.play(); }, false);
 		}
 	</script>
 	

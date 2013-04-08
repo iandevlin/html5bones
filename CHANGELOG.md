@@ -1,3 +1,13 @@
+###v1.6.1 (8th April 2013)
+
+- Added some extra <nav> element placement advice
+- Changed "click" events on Android event handlers to "touchstart"
+- Updated Flash fallback for audio files
+- Upgraded to latest versions of Normalize.css (v2.1.1 and v1.1.1 for legacy)
+- The "click" event handlers are only necessary for pre Android 4 devices, so the JavaScript for that has been changed
+- The Flash Player used for the fallback video and audio is actually from [JW Player](http://www.longtailvideo.com/jw-player/)
+- Some minor comment changes
+
 ###v1.6.0 (7th March 2013)
 
 - Changed player.swf to [Video.js](http://videojs.com/) version

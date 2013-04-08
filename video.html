@@ -38,8 +38,8 @@
 		<!-- Include an Ogg video file to support Firefox 3.5 and 3.6 -->
 		<source src="url-to-video.ogg" type="video/ogg">
 		
-		<!-- Provide a Flash fallback for browsers that don't support HTML5 video, e.g. Internet Explorer 6-7.
-		This uses the Video.js Flash Player to play the MP4 file. Set the height and width attributes to the correct values. -->
+		<!-- Provide a Flash fallback for browsers that don't support HTML5 video, e.g. Internet Explorer 6-8.
+		This uses the JW Player Flash Player to play the MP4 file. Set the height and width attributes to the correct values. -->
 		<object type="application/x-shockwave-flash" data="player.swf" width="XXX" height="XXX">
         	<param name="movie" value="player.swf" />
         	<param name="flashvars" value="controlbar=over&amp;image=url-to-poster-image.jpg&amp;file=url-to-video.mp4" />
@@ -62,10 +62,10 @@
 	
 	<!-- Required to initiate video play in Android -->
 	<script>
-		// Use the dreaded browser sniffing to check if it's Android
-		var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+		// Use browser sniffing to check if it's a pre Android 4 device (some say browser sniffing is bad - but I think it's appropriate here)
+		var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
 		
-		// If this is an Android browser, then add a touchstart handler to play the video when it is "touched"
+		// If this is a pre Android 4 device, then add a click handler to play the audio and video when it is "clicked" (touched)
 		if (isAndroid) {
 			var video = document.getElementById("video");
 			video.addEventListener("touchstart", function() { video.play(); }, false);
