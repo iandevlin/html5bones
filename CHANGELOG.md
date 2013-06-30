@@ -1,3 +1,10 @@
+###v1.6.2 (30th June 2013)
+
+- Renamed index.html to main-template.html
+- Moved all HTML5 multimedia related files into multimedia sub-directory
+- Renamed index-bare-bones.html to main-template-bare-bones.html and index-no-coments.html to main-template-no-comments.html. These were also moved into the clean-templates sub-directory
+- Changed doctype back to DOCTYPE (simply because I prefer it that way)
+
 ###v1.6.1 (8th April 2013)
 
 - Added some extra <nav> element placement advice
