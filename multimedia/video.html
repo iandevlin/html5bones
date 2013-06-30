@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+	<!-- Define the page charset to be utf-8 -->
+	<meta charset="utf-8">
+	
+	<title><!-- Enter page title here --></title>
+	
+	<!-- Enter a brief description of your page -->
+	<meta name="description" content="">
+	
+	<!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	
+	<!-- Include the site stylesheet -->
+	<link href="css/styles.css" rel="stylesheet" media="all">
+	
+	<!-- Include the HTML5 shiv and shiv print polyfills for Internet Explorer browsers 8 and below -->
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+	<!-- This video element tells the browser to display the default control set, to use a specified poster image which will display before the user plays the video, and to only preload the video's metadata (e.g. video duration)
+	NOTE: Internet Explorer 9 and 10 will ignore the poster image if any of the video is loaded. To force these browsers to support the poster image, set preload="none" -->	
+	<video id="video" controls poster="url-to-poster-image.jpg" preload="metadata">
+		<!-- Provide multiple video sources for cross-browser support -->
+		
+		<!-- MP4 source for Chrome, Safari, Internet Explorer 9+, iOS and Android
+		NOTE: remove the type attribute from the MP4 <source> element to ensure older Android support -->
+		<source src="url-to-video.mp4" type="video/mp4">
+		
+		<!-- WebM source for FireFox and Opera (also Chrome and Internet Explorer 9+) -->
+		<source src="url-to-video.webm" type="video/webm">
+		
+		<!-- Include an Ogg video file to support Firefox 3.5 and 3.6 -->
+		<source src="url-to-video.ogg" type="video/ogg">
+		
+		<!-- Provide a Flash fallback for browsers that don't support HTML5 video, e.g. Internet Explorer 6-8.
+		This uses the JW Player Flash Player to play the MP4 file. Set the height and width attributes to the correct values. -->
+		<object type="application/x-shockwave-flash" data="player.swf" width="XXX" height="XXX">
+        	<param name="movie" value="player.swf" />
+        	<param name="flashvars" value="controlbar=over&amp;image=url-to-poster-image.jpg&amp;file=url-to-video.mp4" />
+    	</object>
+		
+		<!-- Add a downloadable link for users who do not have a HTML5 video capable browser, nor Flash installed
+		NOTE: This link will be displayed even if the user has Flash installed -->
+		<a href="url-to-video.mp4">Download MP4 video</a>
+	</video>
+
+
+	<!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+	<!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+	<footer role="contentinfo">
+	
+		<!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2012' is a date -->
+		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+		
+	</footer>
+	
+	<!-- Required to initiate video play in Android -->
+	<script>
+		// Use browser sniffing to check if it's a pre Android 4 device (some say browser sniffing is bad - but I think it's appropriate here)
+		var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
+		
+		// If this is a pre Android 4 device, then add a click handler to play the audio and video when it is "clicked" (touched)
+		if (isAndroid) {
+			var video = document.getElementById("video");
+			video.addEventListener("touchstart", function() { video.play(); }, false);
+		}
+	</script>
+	
+	<!-- Google Analytics - Optimized version by Mathias Bynens -->
+	<!-- See: http://mathiasbynens.be/notes/async-analytics-snippet -->
+	<!-- Change the UA-XXXX-XX string to your site's ID -->
+	<script>
+		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	</script>
+	
+</body>
+</html>
