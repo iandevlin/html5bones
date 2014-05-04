@@ -1,3 +1,10 @@
+###v1.6.3 (4th May 2014)
+
+- Upgraded to version prev3.7.2 of the HTML5 Shiv
+- Upgraded to version 1.1.3 of normalize-legacy.css and v3.0.1 of normalize.css
+- Removed Google Analytics code
+- Added basic bower support
+
 ###v1.6.2 (30th June 2013)
 
 - Renamed index.html to main-template.html
