@@ -25,7 +25,7 @@ Features
 
 Documentation
 =============
-The documentation is contained within inline comments in the various files, but especially index.html
+The documentation is contained within inline comments in the various files, but especially main-template.html.
 
 Contribute
 ==========
