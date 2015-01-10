@@ -1,3 +1,9 @@
+###v1.6.4 (10th January 2015)
+
+- Upgraded to v3.0.2 of normalize.css
+- Updated sample footer copyright date to 2015
+- Converted tabs to spaced in code indentation
+
 ###v1.6.3 (4th May 2014)
 
 - Upgraded to version prev3.7.2 of the HTML5 Shiv
