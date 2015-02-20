@@ -1,4 +1,18 @@
 {
     "name": "html5bones",
     "version": "1.6.3"
+    "homepage": "main-template.html",
+    "authors": [
+        "hozefaj"
+    ],
+    "description": "bare bones HTML5 boiler plate template",
+    "main": "main-template.html",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+  ],
+  "dependencies": {
+  }
 }
