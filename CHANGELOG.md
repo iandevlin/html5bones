@@ -1,8 +1,12 @@
+###v1.6.5 (17th January 2016)
+
+- Updated sample footer copyright date to 2016
+
 ###v1.6.4 (10th January 2015)
 
 - Upgraded to v3.0.2 of normalize.css
 - Updated sample footer copyright date to 2015
-- Converted tabs to spaced in code indentation
+- Converted tabs to spaces in code indentation
 
 ###v1.6.3 (4th May 2014)
 
