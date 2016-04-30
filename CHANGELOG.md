@@ -1,3 +1,8 @@
+###v1.7.1 (30th April 2016)
+
+- Added `shrink-to-fit=no` to viewports for iOS9 (thank you Patrick Lauke)
+- Added the viewport definition to `main-template-bare-bones.html`
+
 ###v1.7.0 (24th April 2016)
 
 - Added `<address>` to examples
