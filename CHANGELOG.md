@@ -1,3 +1,9 @@
+###v1.7.2 (23rd April 2018)
+
+- Upgraded to normalize.css v8.0.0
+- Updated dates in templates to 2018
+- Use of <time> for copyright date doesn't need to use `datetime`
+
 ###v1.7.1 (30th April 2016)
 
 - Added `shrink-to-fit=no` to viewports for iOS9 (thank you Patrick Lauke)
