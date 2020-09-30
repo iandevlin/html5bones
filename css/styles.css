@@ -29,7 +29,7 @@
    ---------------------------------------------------------*/
 @media print {
     * {
-        color:#000 !important;
+        color:#111 !important;
         box-shadow:none !important;
         text-shadow:none !important;
         background:transparent !important;
@@ -57,5 +57,5 @@
         overflow:hidden;
     }
 
-    figure img { border:1px solid #000; }
+    figure img { border:1px solid #111; }
 }
