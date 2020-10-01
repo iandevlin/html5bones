@@ -27,13 +27,13 @@
 
     <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
-    <header role="banner">
+    <header role="banner" id="header">
 
         <h1><abbr title="HyperText Markup Language 5">HTML5</abbr> Bones</h1>
 
         <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
         NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
-        <nav role="navigation">
+        <nav role="navigation" id="nav>
             <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
         </nav>
 
@@ -55,7 +55,7 @@
                 <header>
                     <h2>Getting Started</h2>
                     <!-- ARIA: the landmark role "navigation" is added here as the element contains page navigation -->
-                    <nav role="navigation">
+                    <nav role="navigation" id="nav2>
                         <ul>
                             <li><a href="#introduction">Introduction</a></li>
                             <li><a href="#instructions">Instructions</a></li>
@@ -64,7 +64,7 @@
                 </header>
 
                 <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-                <article id="introduction">
+                <article id="introduction" >
 
                     <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
                     <h3>Introduction</h3>
