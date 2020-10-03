@@ -1,6 +1,8 @@
 HTML5 Bones - The template that goes back to basics
 ===================================================
 
+Welcome! you will get correct Information here..
+
 - Author: Ian Devlin [iandevlin.com](http://iandevlin.com)
 - Twitter: [@iandevlin](http://twitter.com/iandevlin)
 - Website: [html5bones.com](http://html5bones.com)
