@@ -14,7 +14,7 @@ This template can be used as just that, a template to get you going in HTML5, or
 Features
 ========
 
-- Contains the most popular HTML5 structural elements and how to use them
+- It has the most popular HTML5 structural elements and how to use them
 - Also contains templates for HTML5 video and audio and how to use them
 - Cross-browser compatible, down to and including Internet Explorer 7
 - Print CSS included in the main styles.css file
