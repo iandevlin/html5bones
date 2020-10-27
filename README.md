@@ -25,9 +25,9 @@ Features
 
 Documentation
 =============
-The documentation is contained within inline comments in the various files, but especially `main-template.html`.
+The documentation is contained within inline comments in the various files, but especially "main-template.html".
 
 Contribute
 ==========
 
-You are of course welcome to contribute, this is what GitHub is for.
+You are Always welcome to contribute in course , this is what GitHub is for.
