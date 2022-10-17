@@ -119,7 +119,10 @@
         </address>
 
         <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2018' is a date -->
-        <small>Copyright &copy; <time>2018</time></small>
+        <small>Copyright &copy; <time><script>
+         var dt = new Date();
+         document.write("getFullYear() : " + dt.getFullYear() );
+      </script></time></small>
 
     </footer>
 
