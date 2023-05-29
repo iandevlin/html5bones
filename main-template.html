@@ -22,6 +22,30 @@
 
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 219, 225);
+        }
+.fir{
+    display: flex;
+    justify-content: center;
+   
+}
+section{
+    margin-left: 20px;
+}
+section a{
+    text-decoration: none;
+}
+section a:hover{
+    color: gray;
+}
+.role{
+    margin-left: 20px;
+}
+    </style>
+
 </head>
 <body>
 
@@ -29,7 +53,7 @@
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
     <header role="banner">
 
-        <h1><abbr title="HyperText Markup Language 5">HTML5</abbr> Bones</h1>
+        <h1 class="fir"><abbr title="HyperText Markup Language 5">HTML5</abbr> Bones</h1>
 
         <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
         NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
@@ -97,7 +121,7 @@
         NOTE: the aside is placed outside of the <main> element as while its content is related to the content that is within the <main>
         element, it is not part of it -->
         <!-- ARIA: the landmark role "complementary" is added here as it contains supporting information for the main content that remains meaningful even when separated from it -->
-        <aside role="complementary">
+        <aside role="complementary" class="role">
 
             <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
             <h3>Did you know?</h3>
